@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>    
+        <label for="number1" style="padding-right: 20px;">Enter First Number</label>
+        <input type="text" name="num1" id="num1"><br>
+        <label for="number2" style="padding-left: 2px;">Enter Second Number</label>
+        <input type="text" name="num2" id="num2"><br>
+        <button onclick="add()" style="padding-left: 50px; padding-right: 50px;">Add</button>
+        <input type="text" name="result" id="result" style="margin-left: 16px;">
+    
+        
+    <div>
+        <p>
+        1) using getElementByTagName<br>
+            Here we fetch the elements using the tagname,In this for even a single element an array is always created.<br>
+            document.getElementByTagName("")<br>
+        2) using getElementById<br>
+            Here we fetch the elements using the id ,In this no array is created.<br>
+            document.getElementById("")<br>
+        3) using getElementsByClassName<br>
+            Here we fetch the elements using the classname,In this for even a single element an array is always created.<br> 
+            document.getElementsByClassName("")<br>
+        4) getElementsByName<br>
+            Here we fetch the elements using the name,In this for even a single element an array is always created.<br>
+            document.getElementsByName("")
+        </p>
+    </div>
+    
+    
+    <script>
+        function add(){
+        var num1 = document.getElementById("num1").value;
+        var num2 = document.getElementById("num2").value ;
+        var result = parseInt(num1) + parseInt(num2);
+        document.getElementById("result").value = result;}
+        document.get     
+    </script>
+</body>
+</html>
